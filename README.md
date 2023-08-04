@@ -35,7 +35,7 @@ To set up the Weather Web App locally on your machine, follow these steps:
 
 ## Live Demo
 
-Check out the live demo of the Weather Web App [here](https://your-weather-app-demo.com).
+Check out the live demo of the Weather Web App [here](https://vladimiritspace.github.io/webApp/).
 
 
 ## Contributions
