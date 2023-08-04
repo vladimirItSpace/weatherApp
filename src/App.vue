@@ -22,7 +22,7 @@ export default {
       this.error = "";
 
       axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=9d41648851735f97a3652a461f6d2ae0`)
-      .then(res => (this.info = res.data))
+      .then(res => (this.info = res.data.main.temp))
     }
   },
 }
@@ -48,7 +48,7 @@ export default {
     <div class="result_app">
       <p>Weather in {{ cityName}} for today</p>
 
-      <p v-show="this.info != null">{{info.main.temp}} Grade</p>
+      <p v-show="this.info != null">{{ info }} Grade</p>
     </div>
   </div>
 </template>
